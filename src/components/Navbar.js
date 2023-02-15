@@ -27,10 +27,7 @@ export default function Navbar(props) {
               Home <span className="sr-only">(current)</span>
             </a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">
-              {props.aboutText}
-            </a>
+          <li>
           </li>
         </ul>
       </div>
@@ -40,7 +37,9 @@ export default function Navbar(props) {
             type="checkbox"
             role="switch"
             id="flexSwitchCheckDefault"
+            roles="aria-checked"
             onClick={props.toggleMode}
+            aria-checked='false'
           />
           <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
             Enable DarkMode
